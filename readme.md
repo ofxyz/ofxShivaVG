@@ -49,7 +49,7 @@ Now all your ofPath's and ofPolylines should look delicious!
 
 See examples for more details.
 
-##Screenshots
+## Screenshots
 
 Default oF renderer:
 
