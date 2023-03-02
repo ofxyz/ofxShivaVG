@@ -61,6 +61,7 @@ ofxShivaVGRenderer:
 
 ## Roadmap
 
+  - Implement resize
   - Implement arc drawing  
   - make ofPath subclass to add cap/join props pr. path  
   - support gradient fills  
