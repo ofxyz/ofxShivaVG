@@ -26,7 +26,8 @@
 
 // TODO: Implement resize!
 
-ofxShivaVGRenderer::ofxShivaVGRenderer ()
+ofxShivaVGRenderer::ofxShivaVGRenderer()
+: ofGLRenderer(ofGetWindowPtr())
 {
    	_vg.create(ofGetWidth(), ofGetHeight());
 }
@@ -84,11 +85,11 @@ void ofxShivaVGRenderer::draw(ofPolyline & poly)
     
     simpleVGPath p;
     
-    vector<ofVec3f> &verts = poly.getVertices();
+    vector<glm::vec3> &verts = poly.getVertices();
     
     p.moveTo(verts[0].x, verts[0].y);
     
-    for (vector<ofVec3f>::iterator v = verts.begin()+1; v != verts.end(); ++v)
+    for (vector<glm::vec3>::iterator v = verts.begin()+1; v != verts.end(); ++v)
     {
         p.lineTo(v->x, v->y);
     }
